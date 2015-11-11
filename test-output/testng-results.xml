@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Smoke-Test-Suite" duration-ms="54703" started-at="2015-11-11T08:00:25Z" finished-at="2015-11-11T08:01:19Z">
+    <groups>
+    </groups>
+    <test name="StudentLogin-test" duration-ms="28822" started-at="2015-11-11T08:00:25Z" finished-at="2015-11-11T08:00:54Z">
+      <class name="com.diw.test.StudentLoginTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.StudentLoginTest@e92674]" name="setup" is-config="true" duration-ms="6293" started-at="2015-11-11T13:30:25Z" finished-at="2015-11-11T13:30:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.openqa.selenium.chrome.ChromeDriver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.diw.main.DriverManager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="store(org.testng.ITestContext)[pri:0, instance:com.diw.test.StudentLoginTest@e92674]" name="store" is-config="true" duration-ms="1" started-at="2015-11-11T13:30:31Z" finished-at="2015-11-11T13:30:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a98a6a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- store -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.StudentLoginTest@e92674]" name="setDriver" is-config="true" duration-ms="13867" started-at="2015-11-11T13:30:31Z" finished-at="2015-11-11T13:30:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="checkStudentLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.StudentLoginTest@e92674]" name="checkStudentLogin" duration-ms="6498" started-at="2015-11-11T13:30:45Z" finished-at="2015-11-11T13:30:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[priya.smts@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStudentLogin -->
+        <test-method status="PASS" signature="studentlogout()[pri:0, instance:com.diw.test.StudentLoginTest@e92674]" name="studentlogout" duration-ms="2076" started-at="2015-11-11T13:30:51Z" depends-on-methods="com.diw.test.StudentLoginTest.checkStudentLogin" finished-at="2015-11-11T13:30:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studentlogout -->
+        <test-method status="PASS" signature="t1()[pri:0, instance:com.diw.test.StudentLoginTest@e92674]" name="t1" is-config="true" duration-ms="0" started-at="2015-11-11T13:30:54Z" finished-at="2015-11-11T13:30:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1 -->
+      </class> <!-- com.diw.test.StudentLoginTest -->
+    </test> <!-- StudentLogin-test -->
+    <test name="TutorLogin-test" duration-ms="10478" started-at="2015-11-11T08:00:54Z" finished-at="2015-11-11T08:01:04Z">
+      <class name="com.diw.test.TutorLoginPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.TutorLoginPageTest@38ae61]" name="setup" is-config="true" duration-ms="1" started-at="2015-11-11T13:30:54Z" finished-at="2015-11-11T13:30:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.openqa.selenium.chrome.ChromeDriver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.diw.main.DriverManager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="store(org.testng.ITestContext)[pri:0, instance:com.diw.test.TutorLoginPageTest@38ae61]" name="store" is-config="true" duration-ms="0" started-at="2015-11-11T13:30:54Z" finished-at="2015-11-11T13:30:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@fbff54]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- store -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.TutorLoginPageTest@38ae61]" name="setDriver" is-config="true" duration-ms="153" started-at="2015-11-11T13:30:54Z" finished-at="2015-11-11T13:30:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="checkTutorLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.TutorLoginPageTest@38ae61]" name="checkTutorLogin" duration-ms="8794" started-at="2015-11-11T13:30:54Z" finished-at="2015-11-11T13:31:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nukesh.smts@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTutorLogin -->
+        <test-method status="PASS" signature="checkTutorLogout()[pri:0, instance:com.diw.test.TutorLoginPageTest@38ae61]" name="checkTutorLogout" duration-ms="1521" started-at="2015-11-11T13:31:03Z" depends-on-methods="com.diw.test.TutorLoginPageTest.checkTutorLogin" finished-at="2015-11-11T13:31:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTutorLogout -->
+        <test-method status="PASS" signature="t1()[pri:0, instance:com.diw.test.TutorLoginPageTest@38ae61]" name="t1" is-config="true" duration-ms="0" started-at="2015-11-11T13:31:04Z" finished-at="2015-11-11T13:31:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1 -->
+      </class> <!-- com.diw.test.TutorLoginPageTest -->
+    </test> <!-- TutorLogin-test -->
+    <test name="AdminLogin-test" duration-ms="15028" started-at="2015-11-11T08:01:04Z" finished-at="2015-11-11T08:01:19Z">
+      <class name="com.diw.test.AdminLoginPageTest">
+        <test-method status="PASS" signature="setupChromeAndIEDriverProps(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.AdminLoginPageTest@1d422d]" name="setupChromeAndIEDriverProps" is-config="true" duration-ms="9" started-at="2015-11-11T13:30:25Z" finished-at="2015-11-11T13:30:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Drivers\chromedriver.exe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Drivers\IEDriverServer.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupChromeAndIEDriverProps -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.AdminLoginPageTest@1d422d]" name="setup" is-config="true" duration-ms="1" started-at="2015-11-11T13:31:04Z" finished-at="2015-11-11T13:31:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.openqa.selenium.chrome.ChromeDriver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.diw.main.DriverManager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.AdminLoginPageTest@1d422d]" name="setDriver" is-config="true" duration-ms="2176" started-at="2015-11-11T13:31:04Z" finished-at="2015-11-11T13:31:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="store(org.testng.ITestContext)[pri:0, instance:com.diw.test.AdminLoginPageTest@1d422d]" name="store" is-config="true" duration-ms="0" started-at="2015-11-11T13:31:04Z" finished-at="2015-11-11T13:31:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e10dc6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- store -->
+        <test-method status="PASS" signature="checkAdminLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.AdminLoginPageTest@1d422d]" name="checkAdminLogin" duration-ms="2979" started-at="2015-11-11T13:31:07Z" finished-at="2015-11-11T13:31:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAdminLogin -->
+        <test-method status="PASS" signature="checkAddCourse(java.lang.String)[pri:0, instance:com.diw.test.AdminLoginPageTest@1d422d]" name="checkAddCourse" duration-ms="5237" started-at="2015-11-11T13:31:10Z" depends-on-methods="com.diw.test.AdminLoginPageTest.checkAdminLogin" finished-at="2015-11-11T13:31:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Devops]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddCourse -->
+        <test-method status="PASS" signature="checkEditCourse()[pri:0, instance:com.diw.test.AdminLoginPageTest@1d422d]" name="checkEditCourse" duration-ms="4628" started-at="2015-11-11T13:31:15Z" depends-on-methods="com.diw.test.AdminLoginPageTest.checkAddCourse" finished-at="2015-11-11T13:31:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEditCourse -->
+        <test-method status="PASS" signature="t1()[pri:0, instance:com.diw.test.AdminLoginPageTest@1d422d]" name="t1" is-config="true" duration-ms="0" started-at="2015-11-11T13:31:19Z" finished-at="2015-11-11T13:31:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1 -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.diw.test.AdminLoginPageTest@1d422d]" name="tear" is-config="true" duration-ms="2147" started-at="2015-11-11T13:31:19Z" finished-at="2015-11-11T13:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- com.diw.test.AdminLoginPageTest -->
+    </test> <!-- AdminLogin-test -->
+  </suite> <!-- Smoke-Test-Suite -->
+</testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AdminLogin-test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.844">
+  <properties />
+  
+  
+            <testcase name="checkAdminLogin" time="2.979" classname="com.diw.test.AdminLoginPageTest" />
+                <testcase name="checkEditCourse" time="4.628" classname="com.diw.test.AdminLoginPageTest" />
+                <testcase name="checkAddCourse" time="5.237" classname="com.diw.test.AdminLoginPageTest" />
+      
+</testsuite>
