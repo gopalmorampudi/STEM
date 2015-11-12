@@ -1,0 +1,36 @@
+{
+  "defectsList" : [ {
+    "title" : "Product defects",
+    "status" : "FAILED",
+    "defects" : [ {
+      "uid" : "bf1de696c5a86817",
+      "failure" : {
+        "message" : "AssertionError: Time out exception is occurred",
+        "stackTrace" : null
+      },
+      "testCases" : [ {
+        "uid" : "8217cd8f9cf90685",
+        "name" : "studentlogout",
+        "title" : "Studentlogout",
+        "time" : {
+          "start" : 1447310307406,
+          "stop" : 1447310363154,
+          "duration" : 55748
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "4d52d43e4af4a396",
+        "name" : "checkTutorLogout",
+        "title" : "Check tutor logout",
+        "time" : {
+          "start" : 1447310374818,
+          "stop" : 1447310430355,
+          "duration" : 55537
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}

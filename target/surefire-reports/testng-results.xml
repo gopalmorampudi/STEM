@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="3" total="7" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Smoke-Test-Suite" duration-ms="241408" started-at="2015-11-12T06:38:20Z" finished-at="2015-11-12T06:42:21Z">
+    <groups>
+    </groups>
+    <test name="StudentLogin-test" duration-ms="62717" started-at="2015-11-12T06:38:20Z" finished-at="2015-11-12T06:39:23Z">
+      <class name="com.diw.test.StudentLoginTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.StudentLoginTest@528c868]" name="setup" is-config="true" duration-ms="2634" started-at="2015-11-12T01:38:20Z" finished-at="2015-11-12T01:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.openqa.selenium.chrome.ChromeDriver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.diw.main.DriverManager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.StudentLoginTest@528c868]" name="setDriver" is-config="true" duration-ms="1759" started-at="2015-11-12T01:38:23Z" finished-at="2015-11-12T01:38:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="store(org.testng.ITestContext)[pri:0, instance:com.diw.test.StudentLoginTest@528c868]" name="store" is-config="true" duration-ms="0" started-at="2015-11-12T01:38:23Z" finished-at="2015-11-12T01:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5bda157e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- store -->
+        <test-method status="PASS" signature="checkStudentLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.StudentLoginTest@528c868]" name="checkStudentLogin" duration-ms="2460" started-at="2015-11-12T01:38:24Z" finished-at="2015-11-12T01:38:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[priya.smts@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStudentLogin -->
+        <test-method status="FAIL" signature="studentlogout()[pri:0, instance:com.diw.test.StudentLoginTest@528c868]" name="studentlogout" duration-ms="55280" started-at="2015-11-12T01:38:27Z" depends-on-methods="com.diw.test.StudentLoginTest.checkStudentLogin" finished-at="2015-11-12T01:39:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Time out exception is occurred]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Time out exception is occurred
+	at com.diw.action.UserActions.getWebElement(UserActions.java:54)
+	at com.diw.action.UserActions.click(UserActions.java:100)
+	at com.diw.page.StudentProfile.doLogout(StudentProfile.java:18)
+	at com.diw.test.StudentLoginTest.studentlogout(StudentLoginTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studentlogout -->
+        <test-method status="PASS" signature="t1()[pri:0, instance:com.diw.test.StudentLoginTest@528c868]" name="t1" is-config="true" duration-ms="0" started-at="2015-11-12T01:39:23Z" finished-at="2015-11-12T01:39:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1 -->
+      </class> <!-- com.diw.test.StudentLoginTest -->
+    </test> <!-- StudentLogin-test -->
+    <test name="TutorLogin-test" duration-ms="66851" started-at="2015-11-12T06:39:23Z" finished-at="2015-11-12T06:40:30Z">
+      <class name="com.diw.test.TutorLoginPageTest">
+        <test-method status="PASS" signature="store(org.testng.ITestContext)[pri:0, instance:com.diw.test.TutorLoginPageTest@5443d039]" name="store" is-config="true" duration-ms="5" started-at="2015-11-12T01:39:23Z" finished-at="2015-11-12T01:39:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7a388990]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- store -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.TutorLoginPageTest@5443d039]" name="setup" is-config="true" duration-ms="0" started-at="2015-11-12T01:39:23Z" finished-at="2015-11-12T01:39:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.openqa.selenium.chrome.ChromeDriver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.diw.main.DriverManager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.TutorLoginPageTest@5443d039]" name="setDriver" is-config="true" duration-ms="30" started-at="2015-11-12T01:39:23Z" finished-at="2015-11-12T01:39:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="checkTutorLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.TutorLoginPageTest@5443d039]" name="checkTutorLogin" duration-ms="11270" started-at="2015-11-12T01:39:23Z" finished-at="2015-11-12T01:39:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nukesh.smts@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTutorLogin -->
+        <test-method status="FAIL" signature="checkTutorLogout()[pri:0, instance:com.diw.test.TutorLoginPageTest@5443d039]" name="checkTutorLogout" duration-ms="55208" started-at="2015-11-12T01:39:34Z" depends-on-methods="com.diw.test.TutorLoginPageTest.checkTutorLogin" finished-at="2015-11-12T01:40:30Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Time out exception is occurred]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Time out exception is occurred
+	at com.diw.action.UserActions.getWebElement(UserActions.java:54)
+	at com.diw.action.UserActions.click(UserActions.java:100)
+	at com.diw.page.TutorProfile.doTutorLogout(TutorProfile.java:16)
+	at com.diw.test.TutorLoginPageTest.checkTutorLogout(TutorLoginPageTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTutorLogout -->
+        <test-method status="PASS" signature="t1()[pri:0, instance:com.diw.test.TutorLoginPageTest@5443d039]" name="t1" is-config="true" duration-ms="5" started-at="2015-11-12T01:40:30Z" finished-at="2015-11-12T01:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1 -->
+      </class> <!-- com.diw.test.TutorLoginPageTest -->
+    </test> <!-- TutorLogin-test -->
+    <test name="AdminLogin-test" duration-ms="111450" started-at="2015-11-12T06:40:30Z" finished-at="2015-11-12T06:42:21Z">
+      <class name="com.diw.test.AdminLoginPageTest">
+        <test-method status="PASS" signature="setupChromeAndIEDriverProps(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.AdminLoginPageTest@34f22f9d]" name="setupChromeAndIEDriverProps" is-config="true" duration-ms="25" started-at="2015-11-12T01:38:20Z" finished-at="2015-11-12T01:38:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Drivers\chromedriver.exe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Drivers\IEDriverServer.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupChromeAndIEDriverProps -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.AdminLoginPageTest@34f22f9d]" name="setDriver" is-config="true" duration-ms="381" started-at="2015-11-12T01:40:30Z" finished-at="2015-11-12T01:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.AdminLoginPageTest@34f22f9d]" name="setup" is-config="true" duration-ms="0" started-at="2015-11-12T01:40:30Z" finished-at="2015-11-12T01:40:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.openqa.selenium.chrome.ChromeDriver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.diw.main.DriverManager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="store(org.testng.ITestContext)[pri:0, instance:com.diw.test.AdminLoginPageTest@34f22f9d]" name="store" is-config="true" duration-ms="0" started-at="2015-11-12T01:40:30Z" finished-at="2015-11-12T01:40:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13213f26]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- store -->
+        <test-method status="PASS" signature="checkAdminLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.AdminLoginPageTest@34f22f9d]" name="checkAdminLogin" duration-ms="408" started-at="2015-11-12T01:40:30Z" finished-at="2015-11-12T01:40:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAdminLogin -->
+        <test-method status="FAIL" signature="checkAddCourse(java.lang.String)[pri:0, instance:com.diw.test.AdminLoginPageTest@34f22f9d]" name="checkAddCourse" duration-ms="110243" started-at="2015-11-12T01:40:31Z" depends-on-methods="com.diw.test.AdminLoginPageTest.checkAdminLogin" finished-at="2015-11-12T01:42:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Devops]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Time out exception is occurred]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Time out exception is occurred
+	at com.diw.action.UserActions.getWebElement(UserActions.java:54)
+	at com.diw.action.UserActions.click(UserActions.java:100)
+	at com.diw.page.AdminLoggedinPage.addCourse(AdminLoggedinPage.java:23)
+	at com.diw.test.AdminLoginPageTest.checkAddCourse(AdminLoginPageTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddCourse -->
+        <test-method status="SKIP" signature="checkEditCourse()[pri:0, instance:com.diw.test.AdminLoginPageTest@34f22f9d]" name="checkEditCourse" duration-ms="0" started-at="2015-11-12T01:42:21Z" depends-on-methods="com.diw.test.AdminLoginPageTest.checkAddCourse" finished-at="2015-11-12T01:42:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEditCourse -->
+        <test-method status="PASS" signature="t1()[pri:0, instance:com.diw.test.AdminLoginPageTest@34f22f9d]" name="t1" is-config="true" duration-ms="0" started-at="2015-11-12T01:42:21Z" finished-at="2015-11-12T01:42:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1 -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.diw.test.AdminLoginPageTest@34f22f9d]" name="tear" is-config="true" duration-ms="1561" started-at="2015-11-12T01:42:21Z" finished-at="2015-11-12T01:42:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- com.diw.test.AdminLoginPageTest -->
+    </test> <!-- AdminLogin-test -->
+  </suite> <!-- Smoke-Test-Suite -->
+</testng-results>
