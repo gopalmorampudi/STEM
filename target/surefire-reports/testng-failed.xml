@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Smoke-Test-Suite]">
+  <parameter name="pwdadmin" value="123"/>
+  <parameter name="sub" value="Devops"/>
+  <parameter name="pwdt" value="123"/>
+  <parameter name="classname" value="com.diw.main.DriverManager"/>
+  <parameter name="chrome-driver-path" value="Drivers\chromedriver.exe"/>
+  <parameter name="browser" value="org.openqa.selenium.chrome.ChromeDriver"/>
+  <parameter name="pwd" value="123"/>
+  <parameter name="emailadmin" value="admin"/>
+  <parameter name="email" value="priya.smts@gmail.com"/>
+  <parameter name="ie-driver-path" value="Drivers\IEDriverServer.exe"/>
+  <parameter name="emailt" value="nukesh.smts@gmail.com"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="StudentLogin-test(failed)">
+    <classes>
+      <class name="com.diw.test.StudentLoginTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="t1"/>
+          <include name="studentlogout"/>
+          <include name="setup"/>
+          <include name="checkStudentLogin"/>
+          <include name="store"/>
+        </methods>
+      </class> <!-- com.diw.test.StudentLoginTest -->
+      <class name="com.diw.test.AdminLoginPageTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="setupChromeAndIEDriverProps"/>
+          <include name="tear"/>
+          <include name="t1"/>
+          <include name="setup"/>
+          <include name="store"/>
+        </methods>
+      </class> <!-- com.diw.test.AdminLoginPageTest -->
+      <class name="com.diw.test.TutorLoginPageTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="t1"/>
+          <include name="setup"/>
+          <include name="store"/>
+        </methods>
+      </class> <!-- com.diw.test.TutorLoginPageTest -->
+    </classes>
+  </test> <!-- StudentLogin-test(failed) -->
+  <test name="TutorLogin-test(failed)">
+    <classes>
+      <class name="com.diw.test.StudentLoginTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="t1"/>
+          <include name="setup"/>
+          <include name="store"/>
+        </methods>
+      </class> <!-- com.diw.test.StudentLoginTest -->
+      <class name="com.diw.test.TutorLoginPageTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="t1"/>
+          <include name="checkTutorLogin"/>
+          <include name="checkTutorLogout"/>
+          <include name="setup"/>
+          <include name="store"/>
+        </methods>
+      </class> <!-- com.diw.test.TutorLoginPageTest -->
+      <class name="com.diw.test.AdminLoginPageTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="setupChromeAndIEDriverProps"/>
+          <include name="tear"/>
+          <include name="t1"/>
+          <include name="setup"/>
+          <include name="store"/>
+        </methods>
+      </class> <!-- com.diw.test.AdminLoginPageTest -->
+    </classes>
+  </test> <!-- TutorLogin-test(failed) -->
+  <test name="AdminLogin-test(failed)">
+    <classes>
+      <class name="com.diw.test.StudentLoginTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="t1"/>
+          <include name="setup"/>
+          <include name="store"/>
+        </methods>
+      </class> <!-- com.diw.test.StudentLoginTest -->
+      <class name="com.diw.test.AdminLoginPageTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="checkAddCourse" invocation-numbers="0"/>
+          <include name="setupChromeAndIEDriverProps"/>
+          <include name="tear"/>
+          <include name="checkEditCourse"/>
+          <include name="checkAdminLogin"/>
+          <include name="t1"/>
+          <include name="setup"/>
+          <include name="store"/>
+        </methods>
+      </class> <!-- com.diw.test.AdminLoginPageTest -->
+      <class name="com.diw.test.TutorLoginPageTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="t1"/>
+          <include name="setup"/>
+          <include name="store"/>
+        </methods>
+      </class> <!-- com.diw.test.TutorLoginPageTest -->
+    </classes>
+  </test> <!-- AdminLogin-test(failed) -->
+</suite> <!-- Failed suite [Smoke-Test-Suite] -->

@@ -1,0 +1,43 @@
+{
+  "uid" : "55e18b27fec8d5e9",
+  "name" : "checkStudentLogin[priya.smts@gmail.com,123]",
+  "title" : "Check student login [priya.smts@gmail.com,123]",
+  "time" : {
+    "start" : 1447310304861,
+    "stop" : 1447310307315,
+    "duration" : 2454
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "steps" : [ {
+    "name" : "checkStudentLogin",
+    "title" : "Enter user name,pwd and click on sigin btn & verify the signin ",
+    "time" : {
+      "start" : 1447310304893,
+      "stop" : 1447310307312,
+      "duration" : 2419
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Without feature"
+  }, {
+    "name" : "story",
+    "value" : "Without story"
+  } ],
+  "parameters" : [ ]
+}

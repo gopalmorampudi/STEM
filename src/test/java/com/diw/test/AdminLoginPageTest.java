@@ -16,7 +16,7 @@ import com.diw.page.StudentLogin;
 
 public class AdminLoginPageTest extends RootTest {
 	private WebDriver driver;
-	private static String url = "http://localhost:9090/STEM-TUTOR-STUDENT/STEM-ADMIN/";
+	private static String url = "http://localhost:8081/STEM-TUTOR-STUDENT/STEM-ADMIN/";
 	
 	@BeforeClass
 	public void setDriver(){

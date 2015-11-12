@@ -1,0 +1,43 @@
+{
+  "uid" : "9b7bbe8d737eba3d",
+  "name" : "checkTutorLogin[nukesh.smts@gmail.com,123]",
+  "title" : "Check tutor login [nukesh.smts@gmail.com,123]",
+  "time" : {
+    "start" : 1447310363544,
+    "stop" : 1447310374818,
+    "duration" : 11274
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "steps" : [ {
+    "name" : "checkTutorLogin",
+    "title" : "Tuorlogin Enter email, password",
+    "time" : {
+      "start" : 1447310363544,
+      "stop" : 1447310374814,
+      "duration" : 11270
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Without feature"
+  }, {
+    "name" : "story",
+    "value" : "Without story"
+  } ],
+  "parameters" : [ ]
+}
